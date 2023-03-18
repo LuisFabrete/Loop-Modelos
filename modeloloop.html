@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modeloloop</title>
+</head>
+<body>
+    <h1>Usando Repetidores</h1>
+    <h2>Usando o For</h2>
+    <p id="repetidorFor"></p>
+
+    <h2>Usando o While com Numero</h2>
+    <p id="repetidorWhile"></p>
+
+    <h2>Usando o While com Texto</h2>
+    <p id="repetidorWhiletexto"></p>
+
+    <h2>Usando o Do While</h2>
+    <p id="repetidorDoWhile"></p>
+    <script>
+
+        for(let index = 1; index <= 5; index ++) {
+            document.getElementById("repetidorFor").innerHTML += index + "Esse é o For" + "</br>";
+        }
+        //While com Numero
+        let contador = 3;
+        while (contador <= 5) {
+            document.getElementById("repetidorWhile").innerHTML += contador + "Esse é o While com Numero" + "</br>";
+            contador ++
+
+        }
+        //While com Texto
+        let senha = "Senac123";
+        while (senha == "Senac123") {
+            document.getElementById("repetidorWhiletexto").innerHTML += senha + "Senha Errada" + "</br>";
+            senha = prompt ("Digite a Senha<While>")
+        }
+        //Do While
+        do {
+            document.getElementById("repetidorDoWhile").innerHTML += senha + "Senha Errada" + "</br>";
+            senha = prompt ("Digite a Senha.<Do while>")
+        } while (senha == "Senac123");
+    </script>
+</body>
+</html>
